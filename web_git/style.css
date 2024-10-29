@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /*  Head  */
+  .title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .scanner h1 {
+    font-size: 64px; /* กำหนดขนาดตัวอักษรเป็น 48px */
+    font-weight: bold;
+    color: #333;
+  }
+
+  .t_info h1 {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .preview2-container {
+    display: flex; /* Align children in a row */
+    justify-content: center; /* Optional: Adjust space between items */
+    align-items: center; /* Optional: Center items vertically */
+    gap: 5px;
+}
+
+  .Module1 p, .Module2 p, .Module3 p, .Module4 p, .Module5 p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+.Module1, .Module2, .Module3, .Module4, .Module5 {
+    margin: 30px;
+    padding: 0;
+}
+
+.Module1 img, .Module2 img, .Module3 img, .Module4 img, .Module5 img {
+    width: 300px;
+}
+
+  /*  About  */
+.about {
+    max-width: 800px; /* กำหนดความกว้างสูงสุดของ div */
+    margin: 0 auto; /* จัดกลาง div */
+    padding: 20px; /* เพิ่ม padding ให้กับ div */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ที่ต้องการใช้ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาให้กับ div */
+    margin-bottom: 20px;
+}
+
+.about h1 {
+    font-size: 3em; /* ขนาดฟอนต์ของหัวข้อ */
+    margin-bottom: 15px; /* ระยะห่างด้านล่าง */
+    
+}
+
+.about p {
+    font-size: 1.2em; /* ขนาดฟอนต์ของเนื้อหา */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+
+  /*  Video  */
+
+.video-container {
+    text-align: center;
+    max-width: 800px; /* กำหนดความกว้างสูงสุดของ div */
+    margin: 0 auto; /* จัดกลาง div */
+    padding: 20px; /* เพิ่ม padding ให้กับ div */
+    background-color: #fff; /* สีพื้นหลังของ div */
+    border-radius: 8px; /* มุมกลม */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาให้กับ div */
+}
+
+.video-container h1 {
+    font-size: 3em; /* ขนาดฟอนต์ของเนื้อหา */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    text-align: center;
+}
+
+  /* Sticky Navbar styling */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  /* Navbar links styling */
+  .navbar a {
+    font-size: 15px;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #575757;
+    color: #fff;
+  }
+
+  /* Container styling */
+  .mem-container {
+    text-align: center;
+  }
+
+  .member {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Grid styling for card container */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* 1fr สำหรับขยายให้เต็มพื้นที่ */
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Card styling */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .card img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+
+  .card-content h2 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .card-content p {
+    margin: 1.2em 0 0;
+    color: #666;
+  }
+
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 15px;
+    margin: 5px 0;
+  }
+
+  .title, .preview-container, .preview2-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview2-container .Module1, .preview2-container .Module2, .preview2-container .Module3, .preview2-container .Module4, .preview2-container .Module5 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .video-container, .about {
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
